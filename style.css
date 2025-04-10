@@ -1,0 +1,360 @@
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background-color: #FBEFE6;
+      color: #333;
+    }
+    header {
+      background-color: #FBEFE6;
+      padding: 1rem 2rem;
+      color: black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 10;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-left img {
+      width: 50px;
+      height: 50px;
+      margin-right: 1rem;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+    nav a {
+      color: black;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hero {
+      position: relative;
+      padding: 6rem 2rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      overflow: hidden;
+       background-image: url('./infirmiere.png');
+      backdrop-filter: blur(10px) ;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      background-blend-mode: overlay;
+      border-radius: 12px;
+      
+    }
+     .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      padding: 2rem;
+     
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .hero .cta-infirmiere {
+      background-color: #8E0F1F;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+    .hero .cta-infirmiere:hover {
+      background-color: #D8415A;
+    }
+    .segmentation {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 4rem 2rem;
+      background-color: #fff;
+    }
+
+    .lib {
+      background-color: #f1f6ff;
+      background-image: url('./liberale.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      /* background-image: url(./bienetre.jpeg); */
+    }
+
+    .be {
+      background-color: #f1f6ff;
+      background-image: url('./bienetre.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      /* background-image: url(./bienetre.jpeg); */
+    }
+
+    .para {
+      background-color: #f1f6ff;
+      background-image: url('./paramedic.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      /* background-image: url(./bienetre.jpeg); */
+    }
+
+
+    .card h3 {
+      color: black;
+      margin-bottom: 1rem;
+    }
+    .card p {
+      margin-bottom: 1rem;
+      font-weight: bold;
+      font-size: 1rem;
+      color: black;
+    }
+    .card button {
+      background-color: #8E0F1F;
+      color: white;
+      border: none;
+      padding: 0.7rem 1.5rem;
+      font-size: 0.9rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .card button:hover {
+      background-color: #D8415A;
+    }
+
+
+/* slider */ 
+
+.service {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem ;
+}
+.custom-slider-container {
+  position: relative;
+  width: 100%;
+  /* max-width: 1200px; */
+  margin: 50px auto;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.custom-slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 33.3333%;
+  box-sizing: border-box;
+  padding: 20px;
+  background: white;
+  margin: 0 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.slide h3 {
+  margin-bottom: 10px;
+}
+
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #8E0F1F;
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  z-index: 10;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.slider-arrow:hover {
+  opacity: 1;
+}
+
+.slider-arrow.left {
+  left: 0;
+}
+
+.slider-arrow.right {
+  right: 0;
+}
+
+.slide img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #8E0F1F;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.card-btn:hover {
+  background-color: #D8415A;
+}
+
+
+@media (max-width: 1024px) {
+  .slide {
+    min-width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .slide {
+    min-width: 100%;
+  }
+}
+
+/* trust */
+
+/* Section "Ils nous font confiance" */
+.trusted-companies {
+  background-color: white;
+  padding: 40px 0;
+  text-align: center;
+  margin-top: 40px; /* Espacement avec les sections précédentes */
+  margin-left: 1rem;
+}
+
+.trusted-companies h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.clients-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; /* Espace entre les logos */
+  flex-wrap: wrap; /* Pour que les logos passent à la ligne si nécessaire */
+}
+
+.clients-logos img {
+  max-height: 60px; /* Ajuste la hauteur pour garder une bonne taille uniforme */
+  max-width: 150px; /* Limite la largeur des logos */
+  object-fit: contain; /* Garde les proportions des images */
+}
+
+/*footer*/
+
+footer {
+  background-color: #FBEFE6;
+  padding: 40px 0;
+  color: #333;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo img {
+  max-width: 80px;
+  margin-right: 20px;
+}
+
+.footer-title h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.footer-title p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.company-info {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.company-info h5 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.social-media a {
+  font-size: 24px;
+  margin-right: 15px;
+  color: #333;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  color: #0073e6;
+}
+
+.footer-links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #0073e6;
+}

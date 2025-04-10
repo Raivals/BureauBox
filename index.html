@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Font Awesome CDN (v6) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+      <header>
+        <div class="header-left">
+          <img src="./logo-bureaubox.png" alt="logo bureaubox"/>
+          <h1>BureauBox</h1>
+        </div>
+    <nav>
+      <a href="#">Accueil</a>
+      <a href="#">Solutions</a>
+      <a href="#">Contact</a>
+      <i class="fa-solid fa-circle-user" style="margin-left: 1rem;"></i>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Infirmières libérales : sécurisez votre pratique au quotidien</h2>
+      <p>Vous exercez un métier exigeant, avec déplacements et domiciles parfois exposés ? BureauBox vous accompagne avec des locaux sécurisés et un service de télésecrétariat sur mesure.</p>
+      <button class="cta-infirmiere">Je suis infirmière libérale - Je découvre l'offre</button>
+    </div>
+  </section>
+  <section style="background-color: white;">
+
+    <h2 class="service" style="margin-left: 2rem; margin-top: 2rem; background-color: white;">Trouvez la solution pensée pour vous</h2>
+
+    <div class="segmentation">
+      <div class="card lib">
+        <h3>Infirmières Libérales</h3>
+        <p>Locaux partagés et accueil sécurisé pour vos patients, secrétariat téléphonique personnalisé pour votre agenda.</p>
+        <button>Voir les offres</button>
+      </div>
+      <div class="card be">
+        <h3>Praticiens du bien-être</h3>
+        <p>Massothérapeutes, sophrologues, psychologues : bénéficiez d’un lieu de consultation souple, calme et professionnel.</p>
+        <button>Découvrir</button>
+      </div>
+      <div class="card para">
+        <h3>Professions paramédicales</h3>
+        <p>Orthophonistes, diététiciens, ergothérapeutes : trouvez un espace flexible qui s’adapte à vos besoins et votre rythme.</p>
+        <button>Explorer</button>
+      </div>
+    </div>
+  </section>
+  <section style="background-color: white;">
+
+    <div class="custom-slider-container">
+      <h2 class="service">Nos services</h2>
+    <button class="slider-arrow left" onclick="slideLeft()">&#10094;</button>
+  
+    <div class="custom-slider-track" id="sliderTrack">
+  
+      <div class="slide">
+        <img src="./vignette-domiciliation-bureaubox.avif" alt="Domiciliation">
+        <h3>Domiciliation d'entreprise</h3>
+        <p>
+          Nous offrons des services de domiciliation qui permettent aux entrepreneurs de bénéficier d'une adresse prestigieuse, d'une gestion du courrier professionnelle, etc.
+        </p>
+        <button class="card-btn">En savoir plus</button>
+      </div>
+  
+      <div class="slide">
+        <img src="./Consultant Hotline.avif" alt="Télésecrétariat">
+        <h3>Télésecrétariat</h3>
+        <p>
+          Notre équipe de télésecrétaires qualifiés propose la gestion des appels, la prise de rendez-vous, et plus encore.
+        </p>
+        <button class="card-btn">En savoir plus</button>
+      </div>
+  
+      <div class="slide">
+        <img src="./vignette-location-bureaubox.avif" alt="Location de bureaux">
+        <h3>Location de bureaux / salle</h3>
+        <p>
+          Bureau Box propose des bureaux entièrement équipés, des salles de réunion ou de formation modernes et flexibles.
+        </p>
+        <button class="card-btn">En savoir plus</button>
+      </div>
+  
+      <div class="slide">
+        <img src="./vignette-evenements-bureaubox.avif" alt="Évènements">
+        <h3>Évènements</h3>
+        <p>
+          Bureau Box est aussi un lieu d’échange culturel où l’art rencontre l’entreprise via des expositions régulières.
+        </p>
+        <button class="card-btn">En savoir plus</button>
+      </div>
+  
+    </div>
+  
+    <button class="slider-arrow right" onclick="slideRight()">&#10095;</button>
+  </div>
+  </section>
+
+  <!-- Section "Ils nous font confiance" -->
+  <section style="background-color: white;">
+
+    <div class="trusted-companies">
+      <h3>Ils nous font confiance</h3>
+      <div class="clients-logos">
+        <img src="./doctolib.avif" alt="Client 1"/>
+        <img src="./maiia.avif" alt="Client 2"/>
+        <img src="./neo-nomade.avif" alt="Client 3"/>
+        <img src="./tbc.avif" alt="Client 4"/>
+        <!-- Ajoute plus de logos si nécessaire -->
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+  <div class="footer-content">
+    <div class="footer-logo">
+      <img src="./logo-bureaubox.png" alt="bureaubox logo"/>
+      <div class="footer-title">
+        <h4>Bureau Box</h4>
+        <p>Gestion des entreprises humaines</p>
+      </div>
+    </div>
+
+    <div class="company-info">
+      <h5>LE BUREAU SARL</h5>
+      <p>31, rue Saint-Pierre</p>
+      <p>57000 Metz</p>
+      <p>Siret : 41195834100041</p>
+    </div>
+
+    <p>&copy; 2025 BureauBox. Tous droits réservés.</p>
+
+    <div class="social-media">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </div>
+
+  <div class="footer-links">
+    <a href="#">Mentions légales</a>
+    <a href="#">Politique de confidentialité</a>
+    <a href="#">Conditions d'utilisation</a>
+  </div>
+</footer>
+
+</body>
+<script src="slider.js"></script>
+</html>
